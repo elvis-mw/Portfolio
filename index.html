@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elvis Mwangi | Data with Purpose</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #080808;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(32, 32, 32, 0.808)1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #1a0b52; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #1a0b52; /* Same as navbar color for seamless look */
+  }
+}
+
+  body {
+    margin: 0;
+    padding-top: 56px; /* adjust based on your navbar */
+  }
+
+  .contact-section {
+    width: 100%;
+    background-color:#1a0b52; /* dark background */
+  }
+
+  .about-section {
+  background-color: #ffe5b4; /* Warm peach */
+  padding: 50px 0;
+}
+
+.projects-section {
+  background-color: #ffd8a8; /* Soft orange */
+  padding: 50px 0;
+}
+
+.skills-section {
+  background-color: #ffb3ab; /* Warm coral */
+  padding: 50px 0;
+}
+
+
+  
+
+</style>
+
+</head>
+<body>
+
+<section id="about" class="about-section" style="padding: 4rem 1rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.4)), url('images/about-background.jpg'); background-size: cover; background-position: center;">
+  <div class="container" style="max-width: 800px; margin: auto; text-align: center;">
+
+    <!-- Heading -->
+    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 2rem; color: #333;"><strong>ABOUT ME</strong></h2>
+
+    <!-- Centered Circular Profile Image -->
+    <img src="images/about/elvis.jpg" alt="Elvis Mwangi"
+         style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%; margin-bottom: 2rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+
+    <!-- About Text -->
+    <div style="text-align: left; font-size: 1.1rem; line-height: 1.7; color: #555;">
+      <p><strong>Hey there! I’m Elvis Mwangi</strong><br>
+      Welcome to my little corner of the internet, where data meets purpose and curiosity meets creativity.</p>
+
+      <p>I’m a Data Analyst with a background in Statistics and a passion for finding meaning in the mess. Whether it's building dashboards in Power BI, writing queries in SQL, or creating predictive models in Python and R, I love using data to answer real-world questions and uncover insights that matter.</p>
+
+      <p>But behind the spreadsheets and scripts, I’m someone who believes in stories. Every dataset tells one and my job is to listen closely, ask the right questions, and bring those stories to light in ways that drive smarter decisions and deeper understanding.</p>
+
+      <!-- Personal Interests -->
+      <p><strong>A few things about me</strong><br>
+      - I love watching documentaries—especially those that dive into history, society, human resilience and those that are richly inovation centered.<br>
+      - I'm always reading a non-fiction book, from biographies and science to leadership and personal growth.<br>
+      - I’m a nature lover at heart. Whether it's hiking a quiet trail, watching birds, or simply being outdoors, nature keeps me grounded and inspired.</p>
+
+      <!-- Reason for Portfolio -->
+      <p><strong>Why this space exists</strong><br>
+      I created this portfolio to showcase not just what I can do with data—but why I care. You'll find projects that reflect my curiosity, my skills, and my desire to make a meaningful impact through analytics.</p>
+
+      <p>I’m also open to new opportunities where I can grow, collaborate, and help turn complex data into clear, powerful decisions—so if something sparks your interest, let’s connect!</p>
+
+      <p>So, whether you're a fellow data nerd, a potential collaborator, or just someone browsing with a curious mind—I'm truly glad you're here.</p>
+
+      <p>Let’s explore data stories together.</p>
+
+      <!-- CTA Button -->
+      <a href="#contact" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 1rem; border-radius: 50px; background-color: #007bff; color: white; text-decoration: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;">
+        Let's Connect
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section py-5" style="background-color: #fdf2e9;"> <!-- warm light background -->
+  <div class="container">
+    <h2 class="text-center mb-5"><strong>PROJECTS</strong></h2>
+    <div class="row">
+
+      <!-- Project: Netflix SQL Data Analysis -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm border-0">
+          <img src="images/projects/net.jpg" class="card-img-top" alt="Netflix SQL Data Analysis">
+          <div class="card-body">
+            <h5 class="card-title">Netflix SQL Data Analysis</h5>
+            <p class="card-text"> This project explores Netflix’s dataset through SQL, uncovering insights from its catalog of movies and TV shows. With details like genres, release years, and content ratings, the analysis dives into trends in content production, viewer preferences, and genre popularity over time.
+
+It also addresses key business questions and provides actionable takeaways—all neatly summarized in the project’s README.</p>
+            <a href="https://github.com/elvis-mw/Netflix-Data-Analysis-Using-SQL" class="btn btn-secondary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apple Store SQL Analysis Project -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm border-0">
+          <img src="images/projects/APPLE.png" class="card-img-top" alt="Apple Store SQL Analysis">
+          <div class="card-body">
+            <h5 class="card-title">Apple Store SQL Analysis</h5>
+            <p class="card-text">This project showcases advanced SQL querying techniques through the analysis of over 600k rows of Apple Store sales data, covering products, transactions, store locations, and warranty claims from retail outlets worldwide. By leveraging SQL, the analysis uncovers valuable business insights such as sales performance trends across different regions, profitability and efficiency at the store level, and patterns in warranty claims and their impact on revenue. This project demonstrates how structured queries can transform raw data into clear, actionable intelligence for strategic decision-making.</p>
+            <a href="https://github.com/elvis-mw/APPLE-STORE-SALES-SQL-ANALYSIS" class="btn btn-secondary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Netflix Dashboard -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm border-0">
+          <img src="images/projects/netflix dash.png" class="card-img-top" alt="Netflix Power BI Dashboard">
+          <div class="card-body">
+            <h5 class="card-title">Netflix Dashboard - Power BI</h5>
+            <p class="card-text">Explore Netflix’s global content library through this interactive Power BI dashboard. Uncover trends in content types, genres, regional distribution, and release patterns, while gaining insights into content preferences worldwide.
+      </p>
+      <p class="card-text">
+        This project highlights my skills in data cleaning, modeling, and DAX, transforming complex data into clear, actionable insights with user-friendly visuals to help understand Netflix's content strategy.</p>
+            <a href="https://github.com/elvis-mw/Netflix-Power-BI-Dashboard" class="btn btn-secondary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apple Store Power BI Dashboard -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm border-0">
+          <img src="images/projects/store.png" class="card-img-top" alt="Apple Store Dashboard">
+          <div class="card-body">
+            <h5 class="card-title">Apple Store Dashboard – Power BI</h5>
+            <p class="card-text"> Step into the world of Apple retail with this interactive Power BI dashboard! This project delivers a clear and insightful view of Apple Store performance across regions—tracking sales trends, product popularity, warranty claims, and operational efficiency. With intuitive visuals and dynamic filters, it enables users to explore key metrics and uncover business drivers behind store success. 
+        <br><br>
+        It highlights my ability to transform complex datasets into compelling stories through data modeling, DAX, and interactive dashboard design—turning numbers into strategies that matter.</p>
+            <a href="https://github.com/elvis-mw/APPLE-STORE-SALES-POWER-BI-DASHBOARD" class="btn btn-secondary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section mt-5">
+  <div class="container">
+    <h2 class="text-center"><strong>SKILLS</strong></h2>
+    <div class="row">
+      <!-- Skill 1 -->
+<div class="col-lg-3 col-md-6 mb-4">
+  <div class="card">
+    <img src="images/skills/1.png" class="card-img-top" alt="Python">
+    <div class="card-body">
+      <h5 class="card-title">Python</h5>
+      <p class="card-text">Python is my go-to language for data analysis, machine learning, and automation. With its rich libraries and intuitive syntax, I leverage Python to clean, analyze, and visualize data effectively, building solutions that drive data-driven decisions.</p>
+    </div>
+  </div>
+</div>
+
+      <!-- Skill 2 -->
+<div class="col-lg-3 col-md-6 mb-4">
+  <div class="card">
+    <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
+    <div class="card-body">
+      <h5 class="card-title">Data Visualization</h5>
+      <p class="card-text">Data visualization is the art of transforming raw data into compelling stories that speak for themselves. With powerful tools like Power BI and Tableau, I bring data to life by crafting dynamic, easy-to-understand visuals that highlight trends, patterns, and insights—empowering businesses to make data-driven decisions with confidence.</p>
+    </div>
+  </div>
+</div>
+
+      <!-- Skill 3 -->
+<div class="col-lg-3 col-md-6 mb-4">
+  <div class="card">
+    <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+    <div class="card-body">
+      <h5 class="card-title">SQL</h5>
+      <p class="card-text">SQL is the backbone of data management. With a strong command of SQL, I efficiently extract, manipulate, and analyze data from complex databases. From simple queries to advanced joins and subqueries, I ensure accurate, actionable insights that help businesses make data-driven decisions. Whether it's generating reports, building data pipelines, or optimizing queries, SQL is at the core of my data strategy.</p>
+    </div>
+  </div>
+</div>
+
+      <!-- Skill 4 -->
+<div class="col-lg-3 col-md-6 mb-4">
+  <div class="card">
+    <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
+    <div class="card-body">
+      <h5 class="card-title">Data Storytelling</h5>
+      <p class="card-text">I firmly believe that data isn't just numbers—it's a story waiting to be told. With my expertise in data storytelling, I turn complex datasets into clear, engaging narratives that resonate with both technical and non-technical audiences. Whether it's through visualizations or verbal explanations, I ensure that insights are accessible and impactful. My goal is to bring data to life, enabling teams to make data-driven decisions that drive real-world impact.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Skill 5 -->
+<div class="col-lg-3 col-md-6 mb-4">
+  <div class="card">
+    <img src="images/skills/excel.png" class="card-img-top" alt="Advanced Excel">
+    <div class="card-body">
+      <h5 class="card-title">Advanced Excel</h5>
+      <p class="card-text">I don’t just use Excel—I make it work magic! Whether it’s uncovering hidden patterns with pivot tables, automating tasks with advanced formulas, or turning messy data into something meaningful, I’m all about transforming raw numbers into stories. Pivot tables let me quickly spot trends that might fly under the radar, while advanced formulas save time and reduce errors. I love cleaning up messy data and creating dynamic dashboards that let decision-makers interact with the data in a way that makes sense for them. For me, Excel is more than just a tool—it’s a storytelling powerhouse, helping businesses turn data into smart, impactful decisions!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Skill 6 -->
+<div class="col-lg-3 col-md-6 mb-4">
+  <div class="card">
+    <img src="images/skills/spss.png" class="card-img-top" alt="SPSS">
+    <div class="card-body">
+      <h5 class="card-title">SPSS</h5>
+      <p class="card-text">When it comes to statistical analysis, I turn to SPSS to dive deep into data. Whether it's handling survey responses, running regression analysis, or testing hypotheses, SPSS helps me transform numbers into stories. By generating insightful outputs, I guide evidence-based decisions that shape research outcomes and social impact projects. It’s all about making data speak clearly, ensuring that every decision is backed by solid, actionable insights. Let’s unlock the power of your data together!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Skill 7 -->
+<div class="col-lg-3 col-md-6 mb-4">
+  <div class="card">
+    <img src="images/skills/nvivo.png" class="card-img-top" alt="NVivo">
+    <div class="card-body">
+      <h5 class="card-title">NVivo</h5>
+      <p class="card-text">
+        I see NVivo as my go-to lens for exploring the human side of data. Whether it's interviews, focus groups, or open-ended survey responses, I use NVivo to sift through the noise and highlight what really matters. From uncovering subtle patterns to surfacing powerful themes, I turn raw narratives into meaningful insights that inform smarter decisions—especially in research and social impact work.
+      </p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+   <!-- Contact Info -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Get In Touch</h2>
+    <p>Have any questions or want to collaborate? Drop me a message via email or connect with me on social media.</p>
+    
+
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-4">
+        <p><strong>Email:</strong> elmwawaceke98@gmail.com</p>
+      </div>
+      <div class="col-md-4">
+        <p><strong>Phone:</strong> 0796174686 | 0798154862</p>
+      </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="row justify-content-center">
+      <div class="col-6 col-sm-3 col-md-2 mb-4">
+        <a href="https://www.linkedin.com/in/elvismwangi/" target="_blank">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon"><br>
+          LinkedIn
+        </a>
+      </div>
+      <div class="col-6 col-sm-3 col-md-2 mb-4">
+        <a href="https://github.com/elvis-mw" target="_blank">
+          <img src="icons/github.png" alt="GitHub" class="social-icon"><br>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home"><strong>My Portfolio</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
